@@ -1,15 +1,12 @@
 import GameplayKit
 
-class RenderComponent: GKComponent
+class SpriteKitRenderComponent: GKComponent
 {
-    var position: Vector2
-    var node: Node
+    var node: SKNode
     
-    init(as node: Node)
+    init(as node: SKNode)
     {
-        self.position = Vector2(x: 0, y: 0)
         self.node = node
-        
         super.init()
     }
     

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "989911C92A8A6DA6004FA137"
-               BuildableName = "SpriteKitGameplayKitDecoupled.app"
-               BlueprintName = "SpriteKitGameplayKitDecoupled"
+               BuildableName = "DecouplingStrategy2.app"
+               BlueprintName = "DecouplingStrategy2"
                ReferencedContainer = "container:SpriteKitGameplayKitDecoupled.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "989911C92A8A6DA6004FA137"
-            BuildableName = "SpriteKitGameplayKitDecoupled.app"
-            BlueprintName = "SpriteKitGameplayKitDecoupled"
+            BuildableName = "DecouplingStrategy2.app"
+            BlueprintName = "DecouplingStrategy2"
             ReferencedContainer = "container:SpriteKitGameplayKitDecoupled.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "989911C92A8A6DA6004FA137"
-            BuildableName = "SpriteKitGameplayKitDecoupled.app"
-            BlueprintName = "SpriteKitGameplayKitDecoupled"
+            BuildableName = "DecouplingStrategy2.app"
+            BlueprintName = "DecouplingStrategy2"
             ReferencedContainer = "container:SpriteKitGameplayKitDecoupled.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

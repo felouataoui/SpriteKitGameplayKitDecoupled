@@ -2,7 +2,7 @@ import GameplayKit
 
 struct GameWorld
 {
-    private var entities = [GKEntity]()
+    private var entities = ContiguousArray<GKEntity>()
     private var renderingSystem: GKComponentSystem<RenderComponent>?
     private var movementSystem = MovementSystem()
     

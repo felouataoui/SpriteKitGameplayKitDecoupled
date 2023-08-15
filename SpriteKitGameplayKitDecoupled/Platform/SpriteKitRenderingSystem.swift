@@ -4,43 +4,38 @@ class SpriteKitRenderingSystem: GKComponentSystem<RenderComponent>
 {
     private var scene: SKScene
     
-    init(using scene: SKScene) {
+    init(using scene: SKScene)
+    {
         self.scene = scene
         super.init(componentClass: RenderComponent.self)
     }
     
     override
-    func addComponent(foundIn entity: GKEntity)
+    func addComponent(_ component: RenderComponent)
     {
-        if let component = entity.component(ofType: RenderComponent.self)
-        {
-            // Create an appropriate SKNode and add it to the scene
-            let node = createNode(from: component)
-            scene.addChild(node)
-            
-            // The camera is special in SpriteKit
-            if let camera = node as? SKCameraNode {
-                scene.camera = camera
-            }
-            
-            // Add a reference of the SKNode in the entity
-            // So we can do one-way binding from entity to SKNode
-            entity.addComponent(GKSKNodeComponent(node: node))
-            
-            // Add the component to the rendering system
-            // This is just how GameplayKit works
-            super.addComponent(component)
+        // Create an appropriate SKNode and add it to the scene
+        let node = createNode(from: component)
+        scene.addChild(node)
+        
+        // The camera is special in SpriteKit
+        if let camera = node as? SKCameraNode {
+            scene.camera = camera
         }
+        
+        // Add a reference of the SKNode in the entity
+        // So we can do one-way binding from entity to SKNode
+        component.internalData = node
+        
+        // Add the component to the rendering system
+        // This is just how GameplayKit works
+        super.addComponent(component)
     }
     
     override
-    func removeComponent(foundIn entity: GKEntity)
+    func removeComponent(_ component: RenderComponent)
     {
-        if let node = entity.component(ofType: GKSKNodeComponent.self)?.node
+        if let node = component.internalData as? SKNode
         {
-            // Remove the SKNode reference from the entity
-            entity.removeComponent(ofType: GKSKNodeComponent.self)
-            
             // The camera is special in SpriteKit
             if node is SKCameraNode {
                 scene.camera = nil
@@ -52,7 +47,7 @@ class SpriteKitRenderingSystem: GKComponentSystem<RenderComponent>
         
         // Remove the component from the rendering system
         // This is just how GameplayKit works
-        super.removeComponent(foundIn: entity)
+        super.removeComponent(component)
     }
     
     override
@@ -61,9 +56,8 @@ class SpriteKitRenderingSystem: GKComponentSystem<RenderComponent>
         for component in self.components
         {
             if
-                let entity = component.entity,
-                let node = entity.component(ofType: GKSKNodeComponent.self)?.node,
-                let position = entity.component(ofType: PositionComponent.self)?.value
+                let node = component.internalData as? SKNode,
+                let position = component.entity?.component(ofType: PositionComponent.self)?.value
             {
                 node.position = CGPoint.from(position)
             }

@@ -1,17 +1,17 @@
 import GameplayKit
 
-class SpriteKitRenderingSystem: GKComponentSystem<SpriteKitRenderComponent>
+class SKRenderComponentSystem: GKComponentSystem<SKRenderComponent>
 {
     private var scene: SKScene
     
-    init(using scene: SKScene)
+    init(_ scene: SKScene)
     {
         self.scene = scene
-        super.init(componentClass: SpriteKitRenderComponent.self)
+        super.init(componentClass: SKRenderComponent.self)
     }
     
     override
-    func addComponent(_ component: SpriteKitRenderComponent)
+    func addComponent(_ component: SKRenderComponent)
     {
         // Add the node to the scene
         scene.addChild(component.node)
@@ -27,7 +27,7 @@ class SpriteKitRenderingSystem: GKComponentSystem<SpriteKitRenderComponent>
     }
     
     override
-    func removeComponent(_ component: SpriteKitRenderComponent)
+    func removeComponent(_ component: SKRenderComponent)
     {
         // The camera is special in SpriteKit
         if component.node is SKCameraNode {
@@ -49,7 +49,7 @@ class SpriteKitRenderingSystem: GKComponentSystem<SpriteKitRenderComponent>
         {
             if let position = component.entity?.component(ofType: PositionComponent.self)?.value
             {
-                component.node.position = CGPoint.from(position)
+                component.node.position = position
             }
         }
     }

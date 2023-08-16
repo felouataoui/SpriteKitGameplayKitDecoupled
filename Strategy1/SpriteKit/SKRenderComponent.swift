@@ -1,13 +1,12 @@
-import Foundation
 import GameplayKit
 
-class PositionComponent: GKComponent
+class SKRenderComponent: GKComponent
 {
-    var value: Vector2
+    var node: SKNode
     
-    init(at position: Vector2)
+    init(_ node: SKNode)
     {
-        self.value = position
+        self.node = node
         super.init()
     }
     

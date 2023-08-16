@@ -11,23 +11,23 @@ struct GameWorld
         for _ in 0...1000
         {
             let entity = GKEntity()
-            entity.addComponent(PositionComponent(at: Vector2(
+            entity.addComponent(PositionComponent(CGPoint(
                 x: Double.random(in: -20...20),
                 y: Double.random(in: -20...20))))
             entity.addComponent(MovementComponent(
-                towards: Vector2(x: Double.random(in: -0.5...0.5), y: Double.random(in: -1...1)),
-                atSpeed: Double.random(in: 50...100)))
-            entity.addComponent(RenderComponent(as: Circle(
+                direction: CGPoint(x: Double.random(in: -0.5...0.5), y: Double.random(in: -1...1)),
+                speed: Double.random(in: 50...100)))
+            entity.addComponent(RenderComponent(Circle(
                 radius: Double.random(in: 10...30),
-                strokeColor: Color(r: 1, g: 1, b: 1))))
+                strokeColor: UIColor(red: 1, green: 1, blue: 1, alpha: 1))))
             
             entities.append(entity)
             movementSystem.addComponent(foundIn: entity)
         }
         
         let camera = GKEntity()
-        camera.addComponent(PositionComponent(at: Vector2(x: 0, y: 0)))
-        camera.addComponent(RenderComponent(as: Camera()))
+        camera.addComponent(PositionComponent(CGPoint(x: 0, y: 0)))
+        camera.addComponent(RenderComponent(Camera()))
         entities.append(camera)
     }
     

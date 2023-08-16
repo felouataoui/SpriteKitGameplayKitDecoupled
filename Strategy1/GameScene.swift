@@ -9,7 +9,7 @@ class GameScene: SKScene
     override
     func sceneDidLoad()
     {
-        self.gameWorld.setRenderingSystem(SpriteKitRenderingSystem(using: self))
+        self.gameWorld.setRenderingSystem(SKRenderComponentSystem(self))
         self.lastUpdateTime = 0
     }
     

@@ -1,6 +1,6 @@
 import GameplayKit
 
-class SpriteKitRenderingSystem: GKComponentSystem<RenderComponent>
+class SKRenderComponentSystem: GKComponentSystem<RenderComponent>
 {
     private var scene: SKScene
     
@@ -59,7 +59,7 @@ class SpriteKitRenderingSystem: GKComponentSystem<RenderComponent>
                 let node = component.internalData as? SKNode,
                 let position = component.entity?.component(ofType: PositionComponent.self)?.value
             {
-                node.position = CGPoint.from(position)
+                node.position = position
             }
         }
     }
@@ -73,7 +73,7 @@ class SpriteKitRenderingSystem: GKComponentSystem<RenderComponent>
         case .circle:
             let circle = component.node as! Circle
             let node = SKShapeNode(circleOfRadius: circle.radius)
-            node.strokeColor = UIColor.from(circle.strokeColor)
+            node.strokeColor = circle.strokeColor
             return node
         case .camera:
             return SKCameraNode()

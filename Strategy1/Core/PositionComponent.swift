@@ -3,9 +3,9 @@ import GameplayKit
 
 class PositionComponent: GKComponent
 {
-    var value: Vector2
+    var value: CGPoint
     
-    init(at position: Vector2)
+    init(_ position: CGPoint)
     {
         self.value = position
         super.init()

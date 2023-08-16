@@ -1,12 +1,13 @@
+import Foundation
 import GameplayKit
 
-class SpriteKitRenderComponent: GKComponent
+class PositionComponent: GKComponent
 {
-    var node: SKNode
+    var value: CGPoint
     
-    init(as node: SKNode)
+    init(_ position: CGPoint)
     {
-        self.node = node
+        self.value = position
         super.init()
     }
     

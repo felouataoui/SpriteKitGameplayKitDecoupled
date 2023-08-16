@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "989911C92A8A6DA6004FA137"
-               BuildableName = "DecouplingStrategy2.app"
-               BlueprintName = "DecouplingStrategy2"
+               BlueprintIdentifier = "9873FBD32A8BCEC5005DB226"
+               BuildableName = "SpriteKitAlone.app"
+               BlueprintName = "SpriteKitAlone"
                ReferencedContainer = "container:SpriteKitGameplayKitDecoupled.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "989911C92A8A6DA6004FA137"
-            BuildableName = "DecouplingStrategy2.app"
-            BlueprintName = "DecouplingStrategy2"
+            BlueprintIdentifier = "9873FBD32A8BCEC5005DB226"
+            BuildableName = "SpriteKitAlone.app"
+            BlueprintName = "SpriteKitAlone"
             ReferencedContainer = "container:SpriteKitGameplayKitDecoupled.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,9 +61,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "989911C92A8A6DA6004FA137"
-            BuildableName = "DecouplingStrategy2.app"
-            BlueprintName = "DecouplingStrategy2"
+            BlueprintIdentifier = "9873FBD32A8BCEC5005DB226"
+            BuildableName = "SpriteKitAlone.app"
+            BlueprintName = "SpriteKitAlone"
             ReferencedContainer = "container:SpriteKitGameplayKitDecoupled.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

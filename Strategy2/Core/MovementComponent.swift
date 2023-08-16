@@ -3,10 +3,10 @@ import GameplayKit
 
 class MovementComponent: GKComponent
 {
-    var direction: Vector2
+    var direction: CGPoint
     var speed: Double
     
-    init(towards direction: Vector2, atSpeed speed: Double)
+    init(direction: CGPoint, speed: Double)
     {
         self.direction = direction
         self.speed = speed

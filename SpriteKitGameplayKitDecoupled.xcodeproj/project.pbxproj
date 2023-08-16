@@ -15,13 +15,12 @@
 		9873FBAA2A8BCA0A005DB226 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9873FBA92A8BCA0A005DB226 /* Assets.xcassets */; };
 		9873FBAD2A8BCA0A005DB226 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9873FBAB2A8BCA0A005DB226 /* LaunchScreen.storyboard */; };
 		9873FBC32A8BCAEE005DB226 /* GameWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873FBB32A8BCAEE005DB226 /* GameWorld.swift */; };
-		9873FBC42A8BCAEE005DB226 /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873FBB42A8BCAEE005DB226 /* Physics.swift */; };
+		9873FBC42A8BCAEE005DB226 /* CGPoint+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873FBB42A8BCAEE005DB226 /* CGPoint+Operations.swift */; };
 		9873FBC52A8BCAEE005DB226 /* MovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873FBB62A8BCAEE005DB226 /* MovementComponent.swift */; };
 		9873FBC62A8BCAEE005DB226 /* MovementSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873FBB72A8BCAEE005DB226 /* MovementSystem.swift */; };
-		9873FBC82A8BCAEE005DB226 /* SpriteKitRenderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873FBBA2A8BCAEE005DB226 /* SpriteKitRenderComponent.swift */; };
+		9873FBC82A8BCAEE005DB226 /* SKRenderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873FBBA2A8BCAEE005DB226 /* SKRenderComponent.swift */; };
 		9873FBCC2A8BCAEE005DB226 /* PositionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873FBBE2A8BCAEE005DB226 /* PositionComponent.swift */; };
-		9873FBCD2A8BCAEE005DB226 /* SpriteKitRenderingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873FBC02A8BCAEE005DB226 /* SpriteKitRenderingSystem.swift */; };
-		9873FBCF2A8BCAEE005DB226 /* CoreGraphicsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873FBC22A8BCAEE005DB226 /* CoreGraphicsExtensions.swift */; };
+		9873FBCD2A8BCAEE005DB226 /* SKRenderComponentSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873FBC02A8BCAEE005DB226 /* SKRenderComponentSystem.swift */; };
 		9873FBD72A8BCEC5005DB226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873FBD62A8BCEC5005DB226 /* AppDelegate.swift */; };
 		9873FBD92A8BCEC5005DB226 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 9873FBD82A8BCEC5005DB226 /* GameScene.sks */; };
 		9873FBDD2A8BCEC5005DB226 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9873FBDC2A8BCEC5005DB226 /* GameScene.swift */; };
@@ -36,22 +35,17 @@
 		989911D92A8A6DA6004FA137 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989911D72A8A6DA6004FA137 /* Main.storyboard */; };
 		989911DB2A8A6DA7004FA137 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989911DA2A8A6DA7004FA137 /* Assets.xcassets */; };
 		989911DE2A8A6DA7004FA137 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989911DC2A8A6DA7004FA137 /* LaunchScreen.storyboard */; };
-		989911E82A8A73DA004FA137 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911E72A8A73DA004FA137 /* Node.swift */; };
-		989911EA2A8A73F6004FA137 /* Circle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911E92A8A73F6004FA137 /* Circle.swift */; };
-		989911EC2A8A7400004FA137 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911EB2A8A7400004FA137 /* Camera.swift */; };
 		989911EE2A8A7416004FA137 /* RenderComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911ED2A8A7416004FA137 /* RenderComponent.swift */; };
-		989911F02A8A75C9004FA137 /* SpriteKitRenderingSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911EF2A8A75C9004FA137 /* SpriteKitRenderingSystem.swift */; };
-		989911F22A8A761C004FA137 /* CoreGraphicsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911F12A8A761C004FA137 /* CoreGraphicsExtensions.swift */; };
-		989911F42A8A76BA004FA137 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911F32A8A76BA004FA137 /* UIKitExtensions.swift */; };
+		989911F02A8A75C9004FA137 /* SKRenderComponentSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911EF2A8A75C9004FA137 /* SKRenderComponentSystem.swift */; };
 		989911F62A8A778A004FA137 /* GameWorld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911F52A8A778A004FA137 /* GameWorld.swift */; };
 		989911F92A8A90EA004FA137 /* MovementSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911F82A8A90EA004FA137 /* MovementSystem.swift */; };
 		989911FB2A8A9126004FA137 /* MovementComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911FA2A8A9126004FA137 /* MovementComponent.swift */; };
-		989911FD2A8A9294004FA137 /* Physics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911FC2A8A9294004FA137 /* Physics.swift */; };
+		989911FD2A8A9294004FA137 /* CGPoint+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911FC2A8A9294004FA137 /* CGPoint+Operations.swift */; };
 		989911FF2A8AAA4D004FA137 /* PositionComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989911FE2A8AAA4D004FA137 /* PositionComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9873FB9A2A8BCA09005DB226 /* DecouplingStrategy1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecouplingStrategy1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9873FB9A2A8BCA09005DB226 /* Strategy1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strategy1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9873FB9C2A8BCA09005DB226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9873FB9E2A8BCA09005DB226 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		9873FBA22A8BCA09005DB226 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -60,13 +54,12 @@
 		9873FBA92A8BCA0A005DB226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9873FBAC2A8BCA0A005DB226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9873FBB32A8BCAEE005DB226 /* GameWorld.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameWorld.swift; sourceTree = "<group>"; };
-		9873FBB42A8BCAEE005DB226 /* Physics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
+		9873FBB42A8BCAEE005DB226 /* CGPoint+Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operations.swift"; sourceTree = "<group>"; };
 		9873FBB62A8BCAEE005DB226 /* MovementComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovementComponent.swift; sourceTree = "<group>"; };
 		9873FBB72A8BCAEE005DB226 /* MovementSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovementSystem.swift; sourceTree = "<group>"; };
-		9873FBBA2A8BCAEE005DB226 /* SpriteKitRenderComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteKitRenderComponent.swift; sourceTree = "<group>"; };
+		9873FBBA2A8BCAEE005DB226 /* SKRenderComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKRenderComponent.swift; sourceTree = "<group>"; };
 		9873FBBE2A8BCAEE005DB226 /* PositionComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionComponent.swift; sourceTree = "<group>"; };
-		9873FBC02A8BCAEE005DB226 /* SpriteKitRenderingSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpriteKitRenderingSystem.swift; sourceTree = "<group>"; };
-		9873FBC22A8BCAEE005DB226 /* CoreGraphicsExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExtensions.swift; sourceTree = "<group>"; };
+		9873FBC02A8BCAEE005DB226 /* SKRenderComponentSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKRenderComponentSystem.swift; sourceTree = "<group>"; };
 		9873FBD42A8BCEC5005DB226 /* SpriteKitAlone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpriteKitAlone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9873FBD62A8BCEC5005DB226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9873FBD82A8BCEC5005DB226 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -75,7 +68,7 @@
 		9873FBE12A8BCEC5005DB226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9873FBE32A8BCEC6005DB226 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9873FBE62A8BCEC6005DB226 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		989911CA2A8A6DA6004FA137 /* DecouplingStrategy2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DecouplingStrategy2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		989911CA2A8A6DA6004FA137 /* Strategy2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Strategy2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989911CD2A8A6DA6004FA137 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989911CF2A8A6DA6004FA137 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		989911D32A8A6DA6004FA137 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -83,17 +76,12 @@
 		989911D82A8A6DA6004FA137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		989911DA2A8A6DA7004FA137 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		989911DD2A8A6DA7004FA137 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		989911E72A8A73DA004FA137 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
-		989911E92A8A73F6004FA137 /* Circle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circle.swift; sourceTree = "<group>"; };
-		989911EB2A8A7400004FA137 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		989911ED2A8A7416004FA137 /* RenderComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderComponent.swift; sourceTree = "<group>"; };
-		989911EF2A8A75C9004FA137 /* SpriteKitRenderingSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpriteKitRenderingSystem.swift; sourceTree = "<group>"; };
-		989911F12A8A761C004FA137 /* CoreGraphicsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphicsExtensions.swift; sourceTree = "<group>"; };
-		989911F32A8A76BA004FA137 /* UIKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitExtensions.swift; sourceTree = "<group>"; };
+		989911EF2A8A75C9004FA137 /* SKRenderComponentSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKRenderComponentSystem.swift; sourceTree = "<group>"; };
 		989911F52A8A778A004FA137 /* GameWorld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameWorld.swift; sourceTree = "<group>"; };
 		989911F82A8A90EA004FA137 /* MovementSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementSystem.swift; sourceTree = "<group>"; };
 		989911FA2A8A9126004FA137 /* MovementComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementComponent.swift; sourceTree = "<group>"; };
-		989911FC2A8A9294004FA137 /* Physics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Physics.swift; sourceTree = "<group>"; };
+		989911FC2A8A9294004FA137 /* CGPoint+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Operations.swift"; sourceTree = "<group>"; };
 		989911FE2A8AAA4D004FA137 /* PositionComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,11 +110,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9873FB9B2A8BCA09005DB226 /* DecouplingStrategy1 */ = {
+		9873FB9B2A8BCA09005DB226 /* Strategy1 */ = {
 			isa = PBXGroup;
 			children = (
 				9873FBB22A8BCAEE005DB226 /* Core */,
-				9873FBBF2A8BCAEE005DB226 /* Platform */,
+				9873FBBF2A8BCAEE005DB226 /* SpriteKit */,
 				9873FB9C2A8BCA09005DB226 /* AppDelegate.swift */,
 				9873FB9E2A8BCA09005DB226 /* GameScene.sks */,
 				9873FBA22A8BCA09005DB226 /* GameScene.swift */,
@@ -135,29 +123,28 @@
 				9873FBA92A8BCA0A005DB226 /* Assets.xcassets */,
 				9873FBAB2A8BCA0A005DB226 /* LaunchScreen.storyboard */,
 			);
-			path = DecouplingStrategy1;
+			path = Strategy1;
 			sourceTree = "<group>";
 		};
 		9873FBB22A8BCAEE005DB226 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9873FBB42A8BCAEE005DB226 /* CGPoint+Operations.swift */,
 				9873FBBE2A8BCAEE005DB226 /* PositionComponent.swift */,
 				9873FBB62A8BCAEE005DB226 /* MovementComponent.swift */,
 				9873FBB72A8BCAEE005DB226 /* MovementSystem.swift */,
 				9873FBB32A8BCAEE005DB226 /* GameWorld.swift */,
-				9873FBB42A8BCAEE005DB226 /* Physics.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		9873FBBF2A8BCAEE005DB226 /* Platform */ = {
+		9873FBBF2A8BCAEE005DB226 /* SpriteKit */ = {
 			isa = PBXGroup;
 			children = (
-				9873FBBA2A8BCAEE005DB226 /* SpriteKitRenderComponent.swift */,
-				9873FBC02A8BCAEE005DB226 /* SpriteKitRenderingSystem.swift */,
-				9873FBC22A8BCAEE005DB226 /* CoreGraphicsExtensions.swift */,
+				9873FBBA2A8BCAEE005DB226 /* SKRenderComponent.swift */,
+				9873FBC02A8BCAEE005DB226 /* SKRenderComponentSystem.swift */,
 			);
-			path = Platform;
+			path = SpriteKit;
 			sourceTree = "<group>";
 		};
 		9873FBD52A8BCEC5005DB226 /* SpriteKitAlone */ = {
@@ -177,8 +164,8 @@
 		989911C12A8A6DA6004FA137 = {
 			isa = PBXGroup;
 			children = (
-				9873FB9B2A8BCA09005DB226 /* DecouplingStrategy1 */,
-				989911CC2A8A6DA6004FA137 /* DecouplingStrategy2 */,
+				9873FB9B2A8BCA09005DB226 /* Strategy1 */,
+				989911CC2A8A6DA6004FA137 /* Strategy2 */,
 				9873FBD52A8BCEC5005DB226 /* SpriteKitAlone */,
 				989911CB2A8A6DA6004FA137 /* Products */,
 			);
@@ -187,18 +174,18 @@
 		989911CB2A8A6DA6004FA137 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				989911CA2A8A6DA6004FA137 /* DecouplingStrategy2.app */,
-				9873FB9A2A8BCA09005DB226 /* DecouplingStrategy1.app */,
+				989911CA2A8A6DA6004FA137 /* Strategy2.app */,
+				9873FB9A2A8BCA09005DB226 /* Strategy1.app */,
 				9873FBD42A8BCEC5005DB226 /* SpriteKitAlone.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		989911CC2A8A6DA6004FA137 /* DecouplingStrategy2 */ = {
+		989911CC2A8A6DA6004FA137 /* Strategy2 */ = {
 			isa = PBXGroup;
 			children = (
 				989911E42A8A7377004FA137 /* Core */,
-				989911E52A8A7391004FA137 /* Platform */,
+				989911E52A8A7391004FA137 /* SpriteKit */,
 				989911CD2A8A6DA6004FA137 /* AppDelegate.swift */,
 				989911CF2A8A6DA6004FA137 /* GameScene.sks */,
 				989911D32A8A6DA6004FA137 /* GameScene.swift */,
@@ -207,57 +194,36 @@
 				989911DA2A8A6DA7004FA137 /* Assets.xcassets */,
 				989911DC2A8A6DA7004FA137 /* LaunchScreen.storyboard */,
 			);
-			path = DecouplingStrategy2;
+			path = Strategy2;
 			sourceTree = "<group>";
 		};
 		989911E42A8A7377004FA137 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				989911F72A8A90C8004FA137 /* Movement */,
-				989911E62A8A73BE004FA137 /* Rendering */,
-				989911F52A8A778A004FA137 /* GameWorld.swift */,
+				989911FC2A8A9294004FA137 /* CGPoint+Operations.swift */,
 				989911FE2A8AAA4D004FA137 /* PositionComponent.swift */,
-				989911FC2A8A9294004FA137 /* Physics.swift */,
+				989911FA2A8A9126004FA137 /* MovementComponent.swift */,
+				989911ED2A8A7416004FA137 /* RenderComponent.swift */,
+				989911F82A8A90EA004FA137 /* MovementSystem.swift */,
+				989911F52A8A778A004FA137 /* GameWorld.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		989911E52A8A7391004FA137 /* Platform */ = {
+		989911E52A8A7391004FA137 /* SpriteKit */ = {
 			isa = PBXGroup;
 			children = (
-				989911EF2A8A75C9004FA137 /* SpriteKitRenderingSystem.swift */,
-				989911F12A8A761C004FA137 /* CoreGraphicsExtensions.swift */,
-				989911F32A8A76BA004FA137 /* UIKitExtensions.swift */,
+				989911EF2A8A75C9004FA137 /* SKRenderComponentSystem.swift */,
 			);
-			path = Platform;
-			sourceTree = "<group>";
-		};
-		989911E62A8A73BE004FA137 /* Rendering */ = {
-			isa = PBXGroup;
-			children = (
-				989911E72A8A73DA004FA137 /* Node.swift */,
-				989911E92A8A73F6004FA137 /* Circle.swift */,
-				989911EB2A8A7400004FA137 /* Camera.swift */,
-				989911ED2A8A7416004FA137 /* RenderComponent.swift */,
-			);
-			path = Rendering;
-			sourceTree = "<group>";
-		};
-		989911F72A8A90C8004FA137 /* Movement */ = {
-			isa = PBXGroup;
-			children = (
-				989911F82A8A90EA004FA137 /* MovementSystem.swift */,
-				989911FA2A8A9126004FA137 /* MovementComponent.swift */,
-			);
-			path = Movement;
+			path = SpriteKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9873FB992A8BCA09005DB226 /* DecouplingStrategy1 */ = {
+		9873FB992A8BCA09005DB226 /* Strategy1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9873FBAE2A8BCA0A005DB226 /* Build configuration list for PBXNativeTarget "DecouplingStrategy1" */;
+			buildConfigurationList = 9873FBAE2A8BCA0A005DB226 /* Build configuration list for PBXNativeTarget "Strategy1" */;
 			buildPhases = (
 				9873FB962A8BCA09005DB226 /* Sources */,
 				9873FB972A8BCA09005DB226 /* Frameworks */,
@@ -267,9 +233,9 @@
 			);
 			dependencies = (
 			);
-			name = DecouplingStrategy1;
+			name = Strategy1;
 			productName = DecouplingStrategy1;
-			productReference = 9873FB9A2A8BCA09005DB226 /* DecouplingStrategy1.app */;
+			productReference = 9873FB9A2A8BCA09005DB226 /* Strategy1.app */;
 			productType = "com.apple.product-type.application";
 		};
 		9873FBD32A8BCEC5005DB226 /* SpriteKitAlone */ = {
@@ -289,9 +255,9 @@
 			productReference = 9873FBD42A8BCEC5005DB226 /* SpriteKitAlone.app */;
 			productType = "com.apple.product-type.application";
 		};
-		989911C92A8A6DA6004FA137 /* DecouplingStrategy2 */ = {
+		989911C92A8A6DA6004FA137 /* Strategy2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 989911E12A8A6DA7004FA137 /* Build configuration list for PBXNativeTarget "DecouplingStrategy2" */;
+			buildConfigurationList = 989911E12A8A6DA7004FA137 /* Build configuration list for PBXNativeTarget "Strategy2" */;
 			buildPhases = (
 				989911C62A8A6DA6004FA137 /* Sources */,
 				989911C72A8A6DA6004FA137 /* Frameworks */,
@@ -301,9 +267,9 @@
 			);
 			dependencies = (
 			);
-			name = DecouplingStrategy2;
+			name = Strategy2;
 			productName = SpriteKitGameplayKitDecoupled;
-			productReference = 989911CA2A8A6DA6004FA137 /* DecouplingStrategy2.app */;
+			productReference = 989911CA2A8A6DA6004FA137 /* Strategy2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -340,8 +306,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9873FB992A8BCA09005DB226 /* DecouplingStrategy1 */,
-				989911C92A8A6DA6004FA137 /* DecouplingStrategy2 */,
+				9873FB992A8BCA09005DB226 /* Strategy1 */,
+				989911C92A8A6DA6004FA137 /* Strategy2 */,
 				9873FBD32A8BCEC5005DB226 /* SpriteKitAlone */,
 			);
 		};
@@ -388,17 +354,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9873FBCF2A8BCAEE005DB226 /* CoreGraphicsExtensions.swift in Sources */,
-				9873FBCD2A8BCAEE005DB226 /* SpriteKitRenderingSystem.swift in Sources */,
+				9873FBCD2A8BCAEE005DB226 /* SKRenderComponentSystem.swift in Sources */,
 				9873FBC62A8BCAEE005DB226 /* MovementSystem.swift in Sources */,
 				9873FBCC2A8BCAEE005DB226 /* PositionComponent.swift in Sources */,
 				9873FBC32A8BCAEE005DB226 /* GameWorld.swift in Sources */,
 				9873FBA32A8BCA09005DB226 /* GameScene.swift in Sources */,
-				9873FBC42A8BCAEE005DB226 /* Physics.swift in Sources */,
+				9873FBC42A8BCAEE005DB226 /* CGPoint+Operations.swift in Sources */,
 				9873FBA52A8BCA09005DB226 /* GameViewController.swift in Sources */,
 				9873FBC52A8BCAEE005DB226 /* MovementComponent.swift in Sources */,
 				9873FB9D2A8BCA09005DB226 /* AppDelegate.swift in Sources */,
-				9873FBC82A8BCAEE005DB226 /* SpriteKitRenderComponent.swift in Sources */,
+				9873FBC82A8BCAEE005DB226 /* SKRenderComponent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,20 +381,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				989911EA2A8A73F6004FA137 /* Circle.swift in Sources */,
 				989911D42A8A6DA6004FA137 /* GameScene.swift in Sources */,
 				989911F62A8A778A004FA137 /* GameWorld.swift in Sources */,
 				989911FF2A8AAA4D004FA137 /* PositionComponent.swift in Sources */,
-				989911EC2A8A7400004FA137 /* Camera.swift in Sources */,
-				989911F02A8A75C9004FA137 /* SpriteKitRenderingSystem.swift in Sources */,
-				989911FD2A8A9294004FA137 /* Physics.swift in Sources */,
+				989911F02A8A75C9004FA137 /* SKRenderComponentSystem.swift in Sources */,
+				989911FD2A8A9294004FA137 /* CGPoint+Operations.swift in Sources */,
 				989911FB2A8A9126004FA137 /* MovementComponent.swift in Sources */,
-				989911F42A8A76BA004FA137 /* UIKitExtensions.swift in Sources */,
 				989911D62A8A6DA6004FA137 /* GameViewController.swift in Sources */,
 				989911CE2A8A6DA6004FA137 /* AppDelegate.swift in Sources */,
-				989911E82A8A73DA004FA137 /* Node.swift in Sources */,
 				989911EE2A8A7416004FA137 /* RenderComponent.swift in Sources */,
-				989911F22A8A761C004FA137 /* CoreGraphicsExtensions.swift in Sources */,
 				989911F92A8A90EA004FA137 /* MovementSystem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,7 +468,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pixelfahd.DecouplingStrategy1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixelfahd.Strategy1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -536,7 +496,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pixelfahd.DecouplingStrategy1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixelfahd.Strategy1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -734,7 +694,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pixelfahd.SpriteKitGameplayKitDecoupled;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixelfahd.Strategy2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -765,7 +725,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.pixelfahd.SpriteKitGameplayKitDecoupled;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pixelfahd.Strategy2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -779,7 +739,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9873FBAE2A8BCA0A005DB226 /* Build configuration list for PBXNativeTarget "DecouplingStrategy1" */ = {
+		9873FBAE2A8BCA0A005DB226 /* Build configuration list for PBXNativeTarget "Strategy1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9873FBAF2A8BCA0A005DB226 /* Debug */,
@@ -806,7 +766,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		989911E12A8A6DA7004FA137 /* Build configuration list for PBXNativeTarget "DecouplingStrategy2" */ = {
+		989911E12A8A6DA7004FA137 /* Build configuration list for PBXNativeTarget "Strategy2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				989911E22A8A6DA7004FA137 /* Debug */,
